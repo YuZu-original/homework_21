@@ -15,12 +15,9 @@ class Store(Storage):
         return self._capacity
     
     def add(self, title: str, count: int) -> None:
-        if not self.can_add(count):
+        if count > self.get_free_space():
             raise NotEnoughSpace("На складе не хватает места")
         self.items[title] = self.items.get(title, 0) + count
-    
-    def can_add(self, count: int) -> bool:
-        return count <= self.get_free_space()
     
     def remove(self, title: str, count: int) -> None:
         current_count = self.items.get(title)
