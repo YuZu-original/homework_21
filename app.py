@@ -9,7 +9,7 @@ from settings import *
 def main():
     print(START_TEXT)
     
-    input()
+    input() # Enter
     
     store = Store()
     store.add("огурцы", 4)

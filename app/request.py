@@ -12,7 +12,7 @@ class Request:
 
 
 
-def check_request(request: Request):
+def check_request(request: Request) -> str:
     """for main func"""
     if request.product is None:
         return "[?] Вы не ввели название товара"
