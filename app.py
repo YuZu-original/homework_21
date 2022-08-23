@@ -49,7 +49,7 @@ def main():
             except NotEnoughSpace:
                 print("[!] В магазине не хватает места > 20 штук")
             else:
-                print(COURIER_ACTIONS_TEXT)
+                print(COURIER_ACTIONS_TEXT.format(amount=request.amount, product=request.product, from_=request.from_, to=request.to))
                 
                 print("\nВ склад хранится:\n")
                 for title, count in store.get_items().items():

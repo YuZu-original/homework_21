@@ -6,6 +6,6 @@ START_TEXT = """- Чтобы отправить курьера нужно вво
 (Press Enter to Start)"""
 
 COURIER_ACTIONS_TEXT = """Нужное количество есть на складе
-Курьер забрал {amount} {product} со {from}
-Курьер везет {amount} {product} со {from} в {to}
+Курьер забрал {amount} {product} со {from_}
+Курьер везет {amount} {product} со {from_} в {to}
 Курьер доставил {amount} {product} в {to}"""
