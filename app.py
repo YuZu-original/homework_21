@@ -1,9 +1,9 @@
-from app.request import Request
+from app.request import Request, check_request
 from app.shop import Shop
 from app.store import Store
 from app.exceptions import *
 from settings import *
-from app.utils import check_request
+
 
 
 def main():
